@@ -60,6 +60,7 @@ const login = async(req, res=response)=>{
         }
 
         const token = await generarJWT(usuarioDB.id);
+
         res.json({
             ok:true,
             usuario:usuarioDB,
